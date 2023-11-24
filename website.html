@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Document</title>
+    <script src="/javascript/script.js"></script>
+</head>
+<body>
+  <div class="top">
+    <div class="top-text">
+     <h1>CSS Brukerveldeing</h1>
+     <p>Lær og bli en mester i css med denne brukerveldeing</p>
+    </div>
+   </div>
+    <h1>Hva vil du lære om?</h1>
+     <div class="info">
+        <div>
+         <h1>CSS Oppsett</h1>
+         <p>I CSS Oppsett skal du lære hvordan vi refererer til forskjellige ting i css, for eksempel hvordan vi styler et div, id element eller bare en h1. Du kommer også til og lære hvordan du styler forskjellige ting inn andre elementer.   
+        </p>
+         <button onclick="scrollDown('OppsettScroll')">CSS Oppsett</button>
+        </div>
+        <div>
+         <h1>Variabler</h1>
+         <p>Curabitur a ligula a orci fringilla gravida. Sed ipsum turpis, mattis sed magna a, ultrices tincidunt est. Mauris augue purus, sodales id urna nec, scelerisque facilisis eros. Nulla ornare mollis malesuada. Ut sollicitudin justo porttitor quam ultrices, eu porta lectus vestibulum. Praesent convallis dui luctus, laoreet ligula quis, luctus lacus. Quisque laoreet nibh quis lacus pretium, ornare efficitur velit mollis. Nulla massa nibh, varius quis sem nec, facilisis dictum orci. Mauris vitae sodales leo. Curabitur a ligula a orci fringilla gravida. Nec dapibus erat.</p>
+         <button onclick="scrollDown('VariablerScroll')">Variabler</button>
+        </div>
+        <div>
+         <h1>Vanlige Feil</h1>
+         <p>Curabitur a ligula a orci fringilla gravida. Sed ipsum turpis, mattis sed magna a, ultrices tincidunt est. Mauris augue purus, sodales id urna nec, scelerisque facilisis eros. Nulla ornare mollis malesuada. Ut sollicitudin justo porttitor quam ultrices, eu porta lectus vestibulum. Praesent convallis dui luctus, laoreet ligula quis, luctus lacus. Quisque laoreet nibh quis lacus pretium, ornare efficitur velit mollis. Nulla massa nibh, varius quis sem nec, facilisis dictum orci. Mauris vitae sodales leo. Curabitur a ligula a orci fringilla gravida. Nec dapibus erat.</p>
+         <button onclick="scrollDown('VanligeFeilScroll')">Vanlige Feil</button>
+         </div>
+        <div>
+         <h1>Tips og triks</h1>
+         <p>Curabitur a ligula a orci fringilla gravida. Sed ipsum turpis, mattis sed magna a, ultrices tincidunt est. Mauris augue purus, sodales id urna nec, scelerisque facilisis eros. Nulla ornare mollis malesuada. Ut sollicitudin justo porttitor quam ultrices, eu porta lectus vestibulum. Praesent convallis dui luctus, laoreet ligula quis, luctus lacus. Quisque laoreet nibh quis lacus pretium, ornare efficitur velit mollis. Nulla massa nibh, varius quis sem nec, facilisis dictum orci. Mauris vitae sodales leo. Curabitur a ligula a orci fringilla gravida. Nec dapibus erat.</p>
+         <button onclick="scrollDown('tipsOgTriksScroll')">Tips og triks</button>
+        </div>
+     </div>
+     <div id="OppsettScroll" class="oppsett">
+      <h1>Css Oppsett</h1>
+       <div class="box-oppsett">
+        <div class="text-oppsett-1">
+          <p>
+            Når du skal style noe i HTML med CSS er det 3 hovedmåter du kan gjøre det på. 
+            Du kan enten ha en <code>&lt;style&gt;&lt;/style&gt;</code> attribut inni head attributen. 
+            Med denne metoden kan du style hva som helst i hele HTML-filen. 
+            Den metoden kaller vi innebygd CSS. <br><br>
+  
+            Du kan ha en egen .css-fil inn workspacet hvor du skriver CSS din, 
+            og for å lage en kobling til den skriver du 
+            <code>&lt;link rel="stylesheet" type="link til css-fil" href="styles.css"&gt;</code> i head-attributen. 
+            Da kan du også style hva som helst i den HTML-filen. Og det kaller vi ekstern CSS. <br><br>
+            
+            Det du også kan gjøre her, er å ha en style-attribut rett inni div, id-elementet eller hva som helst element, 
+            slik som det her 
+            <code>&lt;p style=""&gt;Velkommen til nettsiden&lt;/p&gt;</code>, 
+            og med denne metoden kan du bare style den attributen du puttet style-attributen i. 
+            Og dette kaller vi for inline CSS. <br><br>
+            
+            Når du skal lage en ordentlig nettside, anbefaler jeg at du bruker ekstern CSS. 
+            Og det er den jeg kommer til å bruke resten av brukerguiden.   
+        </p>
+        </div>
+        <div class="images-oppsett-1">
+            <p>Innebygd CSS</p>
+            <img src="/img/Innebygd.png" alt="" > 
+            <p>Ekstern CSS</p>
+            <img src="/img/Ekstern.png" alt="">
+            <p>Inline CSS</p>
+            <img src="/img/Inline.png" alt="">
+        </div>
+        <div>
+           <p>Når du skal style noe i HTML med CSS er det 3 hovedmåter du kan gjøre det på. 
+            Du kan enten ha en <code>&lt;style&gt; &lt;/style&gt;</code> attribut inni hovedattributen. 
+            Med denne metoden kan du style hva som helst i hele HTML-filen. 
+            Den metoden kaller vi innebygd CSS. Du kan ha en egen .css-fil hvor du skriver CSS din, 
+            og for å lage en kobling til den skriver du 
+            <code>&lt;link rel="stylesheet" type="link til css-fil" href="styles.css"&gt;</code> i head-attributen. 
+            Da kan du også style hva som helst i den HTML-filen. Og det kaller vi ekstern CSS. 
+            Det du også kan gjøre her, er å ha en style-attribut rett inni div, id-elementet eller hva som helst element, 
+            slik som det her 
+            <code>&lt;span style=""&gt;Velkommen til nettsiden&lt;/span&gt;</code>, 
+            og med denne metoden kan du bare style den attributen du puttet style-attributen i. 
+            Og dette kaller vi for inline CSS. 
+            Når du skal lage en ordentlig nettside, anbefaler jeg at du bruker ekstern CSS.</p>
+        </div>
+        <div>
+          <div>
+            <p>Innebygd CSS</p>
+            <img src="/img/Innebygd.png" alt="" >
+           </div>
+           <div>
+            <p>Ekstern CSS</p>
+            <img src="/img/Ekstern.png" alt="">
+           </div>
+           <div>
+            <p>Inline CSS</p>
+            <img src="/img/Inline.png" alt="">
+           </div>
+        </div>
+       </div>
+     </div>
+     <div id="VariablerScroll" class="variabler">
+        <h1>Variabler</h1>
+      </div>
+      <div id="VanligeFeilScroll" class="vanligeFeil">
+        <h1>Vanlige Feil</h1>
+      </div>
+      <div id="tipsOgTriksScroll" class="tipsOgTriks">
+        <h1>Tips Og Triks</h1>
+      </div>
+</body>
+</html>

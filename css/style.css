@@ -70,9 +70,9 @@ h3 {
 
 .info {
     display: flex;
+    justify-content: space-around;
     grid-gap: 20px;
     align-items: center;
-    justify-content: space-evenly;
     margin-left: 20px;
     margin-right: 20px;
 }
@@ -91,6 +91,7 @@ h3 {
 
 .box-oppsett {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     margin-left: 30px;
     margin-right: 30px;
@@ -109,7 +110,7 @@ h3 {
 
 
 
-.images-oppsett-1 img, .images-oppsett-2 img, .images-oppsett-3 img, .images-oppsett-4 img, .images-oppsett-5 img {
+.images-oppsett-1 img, .images-oppsett-2 img, .images-oppsett-3 img, .images-oppsett-4 img, .images-oppsett-5 img, .images-oppsett-6 img, .images-oppsett-7 img, .images-oppsett-8 img {
     border-radius: 5px;
     width: 100%;
 }
@@ -118,7 +119,17 @@ h3 {
     width: 50% !important;
 }
 
-.images-oppsett-1, .images-oppsett-2, .images-oppsett-3, .images-oppsett-4, .images-oppsett-5{
+.images-oppsett-7 img {
+    width: 60% !important;
+}
+
+.images-oppsett-6 img {
+    width: 80% !important;
+
+}
+
+
+.images-oppsett-1, .images-oppsett-2, .images-oppsett-3, .images-oppsett-4, .images-oppsett-5, .images-oppsett-6, .images-oppsett-8 {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -146,3 +157,60 @@ h3 {
 }
 
 
+.flex-box-show-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+ .div-hover, .div-active{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+.flex-box-show-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+
+.flex-box-show-column div, .flex-box-show-row div {
+    margin: 2px;
+    font-size: large;
+    width: 15%;
+    background-color: #346CA1;
+}
+
+.div-hover:hover {
+    color: #000000;
+    font-weight: bolder;
+    cursor: grab;;
+    text-decoration: line-through;
+}
+
+.div-active:active {
+    color: #000000;
+    font-weight: bolder;
+    cursor: pointer;;
+    text-decoration: underline;
+}
+
+.div-hover div, .div-active div {
+    margin: 2px;
+    font-size: large;
+    background-color: green;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.m

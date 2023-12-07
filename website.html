@@ -11,29 +11,29 @@
     <div class="top">
       <div class="top-text">
         <h1>CSS Brukerveldeing</h1>
-        <p>Lær og bli en mester i css med denne brukerveldeing</p>
+        <p>En nybegynner guid i css</p>
       </div>
     </div>
     <h1>Hva vil du lære om?</h1>
     <div class="info">
       <div>
         <h1>CSS Oppsett</h1>
-        <p>I CSS Oppsett skal du lære hvordan vi refererer til forskjellige ting i css, for eksempel hvordan vi styler et div, id element eller bare en h1. Du kommer også til og lære hvordan du styler forskjellige ting inn andre elementer. </p>
+        <p>I CSS Oppsett skal du lære hvordan vi refererer til forskjellige ting i css, for eksempel hvordan vi styler et div, id element eller bare en h1. Du kommer også til og lære hvordan du styler forskjellige ting inn elementer. Sånn som hvordan endre farge på en <span id="html">&lt;p&gt;&lt;/p&gt;</span>. </p>
         <button onclick="scrollDown('CssOppsett')">CSS Oppsett</button>
       </div>
       <div>
         <h1>Variabler</h1>
-        <p>Curabitur a ligula a orci fringilla gravida. Sed ipsum turpis, mattis sed magna a, ultrices tincidunt est. Mauris augue purus, sodales id urna nec, scelerisque facilisis eros. Nulla ornare mollis malesuada. Ut sollicitudin justo porttitor quam ultrices, eu porta lectus vestibulum. Praesent convallis dui luctus, laoreet ligula quis, luctus lacus. Quisque laoreet nibh quis lacus pretium, ornare efficitur velit mollis. Nulla massa nibh, varius quis sem nec, facilisis dictum orci. Mauris vitae sodales leo. Curabitur a ligula a orci fringilla gravida. Nec dapibus erat.</p>
+        <p>I Variabler skal du lære om bruken av CSS-variabler for å gjøre stylingen av nettstedselementer mer fleksibel og gjenbrukbar. Noen av tinge du skal få vite er hvordan Definere CSS-variabler i :root-seksjonen, bruke variabler i stedet for direkte verdier og fordeler ved bruk av variabler.</p>
         <button onclick="scrollDown('VariablerScroll')">Variabler</button>
       </div>
       <div>
         <h1>Vanlige Feil</h1>
-        <p>Curabitur a ligula a orci fringilla gravida. Sed ipsum turpis, mattis sed magna a, ultrices tincidunt est. Mauris augue purus, sodales id urna nec, scelerisque facilisis eros. Nulla ornare mollis malesuada. Ut sollicitudin justo porttitor quam ultrices, eu porta lectus vestibulum. Praesent convallis dui luctus, laoreet ligula quis, luctus lacus. Quisque laoreet nibh quis lacus pretium, ornare efficitur velit mollis. Nulla massa nibh, varius quis sem nec, facilisis dictum orci. Mauris vitae sodales leo. Curabitur a ligula a orci fringilla gravida. Nec dapibus erat.</p>
+        <p>I Vanlige Feil skal du lære vanlige feil som folk flest gjøre når de begynner lære css. Du skal lære forskjellen mellom padding og margin, siden de to blir ofte blandet. Og du skal også lære og husker og gjøre css din skalerbar.</p>
         <button onclick="scrollDown('VanligeFeilScroll')">Vanlige Feil</button>
       </div>
       <div>
         <h1>Tips og triks</h1>
-        <p>Curabitur a ligula a orci fringilla gravida. Sed ipsum turpis, mattis sed magna a, ultrices tincidunt est. Mauris augue purus, sodales id urna nec, scelerisque facilisis eros. Nulla ornare mollis malesuada. Ut sollicitudin justo porttitor quam ultrices, eu porta lectus vestibulum. Praesent convallis dui luctus, laoreet ligula quis, luctus lacus. Quisque laoreet nibh quis lacus pretium, ornare efficitur velit mollis. Nulla massa nibh, varius quis sem nec, facilisis dictum orci. Mauris vitae sodales leo. Curabitur a ligula a orci fringilla gravida. Nec dapibus erat.</p>
+        <p>I tips og triks skal du lærer om et par ting, først ting jeg ønsket at jeg viste da jeg startet med css. Nemelig hvordan og hva flex-box er. Du skal også få lære et lite triks som kan gjøre nettsiden din bedre, ved hjelp av <span id="css">:hover</span> og <span id="css">:active</span>. </p>
         <button onclick="scrollDown('tipsOgTriksScroll')">Tips og triks</button>
       </div>
     </div>
@@ -44,40 +44,41 @@
           <div class="text-oppsett">
             <h3>Oppsett</h3>
             <p> Når du skal style noe i HTML med CSS er det 3 hovedmåter du kan gjøre det på. Du kan enten ha en <span id="html">&lt;style&gt;&lt;/style&gt;</span> attribut inni head attributen. Med denne metoden kan du style hva som helst i hele HTML-filen. Den metoden kaller vi innebygd CSS. <br>
-              <br> Du kan ha en egen .css-fil inn workspacet hvor du skriver CSS din, og for å lage en kobling til den skriver du <span id="html">&lt;link rel="stylesheet" type="link til css-fil" href="styles.css"&gt;</span> i head-attributen. Da kan du også style hva som helst i den HTML-filen. Og det kaller vi ekstern CSS. <br>
-              <br> Det du også kan gjøre her, er å ha en style-attribut rett inni div, id-elementet eller hva som helst element, slik som det her <br>
-              <span id="html">&lt;p style=""&gt;Velkommen til nettsiden&lt;/p&gt;</span>, og med denne metoden kan du bare style den attributen du puttet style-attributen i. Og dette kaller vi for inline CSS. <br>
+              <br> Du kan ha en egen .css-fil inn workspacet hvor du skriver CSS din, og for å lage en kobling til den skriver du <span id="html">&lt;link rel="stylesheet" type="link til css-fil" href="styles.css"&gt;</span> i head-attributen. Da kan du også style hva som helst i den HTML-filen. Og det kaller vi ekstern CSS.<br>
+              <br> Det du også kan gjøre her, er å ha en style-attribut rett inni div, id-elementet eller hva som helst element du vil style. Sånn som det her <br>
+              <span id="html">&lt;p style=""&gt;Velkommen til nettsiden&lt;/p&gt;</span>. Med denne metoden kan du bare style den attributen du puttet stylen i. Og dette kaller vi for inline CSS. <br>
               <br> Når du skal lage en ordentlig nettside, anbefaler jeg at du bruker exteren CSS. Og det er den jeg kommer til å bruke resten av brukerguiden.
             </p>
           </div>
           <div class="images-oppsett-1">
             <div>
-             <h3>Innebygd CSS</h3>
-             <img src="/img/Innebygd.png" alt="">
+              <h3>Innebygd CSS</h3>
+              <img src="/img/Innebygd.png" alt="">
             </div>
             <div>
-             <h3>Ekstern CSS</h3>
-             <img src="/img/Ekstern.png" alt="">
+              <h3>Ekstern CSS</h3>
+              <img src="/img/Ekstern.png" alt="">
             </div>
             <div>
-             <h3>Ekstern CSS</h3>
-             <img src="/img/Inline.png" alt="">
+              <h3>Ekstern CSS</h3>
+              <img src="/img/Inline.png" alt="">
             </div>
           </div>
           <div class="text-oppsett">
             <h3>Attributer</h3>
-            <p> Når du skal style noe på en av disse måtene og skrive CSS, må du referere til attributten du vil style. Det er mange forskjellige ting du kan endre, men nå fokuserer vi bare på fargen. <br>
-              <br> Hvis du vi style alle av en atribut i et html file, forexempel alle <span id="html">&lt;h1&gt;&lt;/h1&gt;</span> it html filen, da må du skrive <span id="css"> h1 {color: red;}</span> on siden du da velger og si alle h1 vil alle h1 bli den stilen du velger.<br>
-              <br> Hvis du vil style en h1 som har en id, for eksempel <span id="html">&lt;h1 id = “overtext”&gt&lt;/h1&gt;</span> da må du referere til id og da starter vi alltid med en #, så da blir det <span id="css">#overtext{color: red;}</span><br>
-              <br> Hvis du vil style en h1 inn en div som <br>
-              <span id="html"> &lt;div class="overtext"&gt;&lt;h1&gt;&lt;/h1&gt;&lt;/div&gt;</span> da må du referere til div class og da starter vi med. så da blir det <span id="css">.overtext h1 {color: red;}</span> siden da referer vi til h1 inn diven <br>
-              <br> Dette prinsippet fungerer for alle attributter.Hvis du har id-er eller div-klasser inne i hverandre, fortsetter du bare nedover til du kommer til den attributten du vil endre. Husk å bruke komma mellom hver attributt du går gjennom.
+            <p> Når du skal style noe på en av disse måtene, må du referere til attributten du vil style. Det er mange forskjellige ting du kan endre, men nå fokuserer vi bare på fargen. <br>
+              <br> Hvis du vi style alle av en attributtene i et html file, forexempel alle <span id="html">&lt;h1&gt;&lt;/h1&gt;</span>. Må du skrive <span id="css"> h1 {color: red;}</span> og siden du da velger og si alle h1 vil alle h1 bli den stylen du velger. <br>
+              <br> Hvis du vil style en h1 som har en id, for eksempel <span id="html">&lt;h1 id = “overtext”&gt&lt;/h1&gt;</span> da må du referere til id og da starter vi alltid med en #, så da blir det <span id="css">#overtext{color: red;}</span>
+              <br>
+              <br> Hvis du vil style en h1 inn en div, skriver du i html <br>
+              <span id="html"> &lt;div class="overtext"&gt;&lt;h1&gt;&lt;/h1&gt;&lt;/div&gt;</span> da må du referere til div class i css-en og da skriver man. <span id="css">.overtext h1 {color: red;}</span> siden da referer vi til h1 inn diven <br>
+              <br> Dette prinsippet fungerer for alle attributter. Så hvis du har id-er eller div-klasser inne i hverandre, fortsetter du bare nedover til du kommer til den attributten du vil endre. Husk å bruke komma mellom hver attributt du går gjennom.
             </p>
           </div>
           <div class="images-oppsett-2">
             <div>
-             <h3>Attribut alt </h3>
-             <img src="/img/Attribut-1.png" alt=""> 
+              <h3>Attribut alt </h3>
+              <img src="/img/Attribut-1.png" alt="">
             </div>
             <div>
               <h3>Attribut i id</h3>
@@ -93,99 +94,164 @@
       <div id="VariablerScroll" class="variabler">
         <h1>Variabler</h1>
         <div class="box-oppsett">
-        <div class="text-oppsett"> 
-         <h3>Farge variabler</h3>
-         <p>La oss si at du skal endre fargen på en <span id="html">&lt;p&gt;&lt;/p&gt;</span>. En vanlig tilnærming ville være å skrive <span id="css">p {color: red;}</span>. Imidlertid, for å gjøre stilen din mer fleksibel og gjenbrukbar, kan du dra nytte av CSS-variabler.<br>
-          <br> For å bruke variabler, starter du med å definere dem i :root-seksjonen ved å skrive <span id="css">:root{--text-farge: red;}</span>. Her er <span id="css">--text-farge</span> navnet på variabelen, og red er verdien du vil sette den til. Du kan også bruke andre fargenavn eller til og med fargekoder som <span id="css">#FFFFFF</span>.<br>
-          <br> Nå, etter at variabelen er definert, kan du bruke den i stedet for å skrive ut fargen direkte. I stedet for <span id="css">color: red;</span>, skriv <span id="variabler">color: var(--text-farge);</span>. Den virkelige fordelen kommer når du vil endre fargen. I stedet for å gå gjennom hele CSS-filen for å oppdatere hver forekomst av <span id="variabler">color: red;</span>, kan du enkelt endre verdien av <span id="css">--text-farge</span> i :root-seksjonen, og alle steder som bruker denne variabelen vil automatisk oppdatere seg.
-          <br>
-          <br> Å bruke variabler i CSS gir en strukturert tilnærming til styling, gjør koden mer lesbar og gjør det enkelt å vedlikeholde og oppdatere utseendet på nettstedet ditt. Dette er spesielt nyttig når du har mange elementer med samme farge eller egenskap, og du vil gjøre globale endringer enkelt.
-          <br>
-          </p>     
-        </div>
-        <div class="images-oppsett-3">
-          <div>
-           <h3>Rød variable</h3> 
-           <img src="/img/Rød-variable.png" alt="">
+          <div class="text-oppsett">
+            <h3>Farge variabler</h3>
+            <p>La oss si at du skal endre fargen på en <span id="html">&lt;p&gt;&lt;/p&gt;</span>. En vanlig måte og gjøre det på ville være å skrive <span id="css">p {color: red;}</span>. For å gjøre stilen din mer fleksibel og gjenbrukbar, kan du bruke CSS-variabler. <br>
+              <br> For å bruke variabler, starter du med å definere dem i :root-seksjonen ved å skrive <span id="css">:root{--text-farge: red;}</span>. Her er <span id="css">--text-farge</span> navnet på variabelen, og red er verdien du vil sette den til. Du kan også bruke andre fargenavn eller til og med fargekoder som <span id="css">#FFFFFF</span>. <br>
+              <br> Nå etter at variabelen er definert, kan du bruke den i stedet for å skrive in fargen direkte. I stedet for <span id="css">color: red;</span>, skriv <span id="variabler">color: var(--text-farge);</span>. Den virkelige fordelen kommer når du vil endre fargen. I stedet for å gå gjennom hele CSS-filen for å oppdatere hver brukning av <span id="variabler">color: red;</span>, kan du enkelt endre verdien av <span id="css">--text-farge</span> i :root-seksjonen, og alle steder som bruker denne variabelen vil automatisk oppdatere seg. <br>
+              <br> Å bruke variabler i CSS gir en strukturert tilnærming til styling, gjør koden mer lesbar og gjør det enkelt å vedlikeholde og oppdatere utseendet på nettstedet ditt. Dette er spesielt nyttig når du har mange elementer med samme farge eller egenskap, og du vil gjøre globale endringer enkelt. <br>
+            </p>
           </div>
-          <div>
-           <h3>Grønn variable</h3> 
-           <img src="/img/Grønn-variable.png" alt="">
+          <div class="images-oppsett-3">
+            <div>
+              <h3>Rød variable</h3>
+              <img src="/img/Rød-variable.png" alt="">
+            </div>
+            <div>
+              <h3>Grønn variable</h3>
+              <img src="/img/Grønn-variable.png" alt="">
+            </div>
+            <div>
+              <h3>Blå variable</h3>
+              <img src="/img/Blå-variable.png" alt="">
+            </div>
           </div>
-          <div>
-           <h3>Blå variable</h3> 
-           <img src="/img/Blå-variable.png" alt="">
+          <div class="text-oppsett">
+            <h3>Andre variabler</h3>
+            <p>Å bruke variabler i CSS gir ikke bare fleksibilitet for farger, men også for andre verdier. La oss si du vil definere variabler for bredde, avstand eller skriftstørrelse. <br>
+              <br> For eksempel, for å håndtere bredden på elementer, kan du definere en variabel i :root-seksjonen, som <span id="css">:root{--element-bredde: 300px;}</span>. Nå kan du bruke denne variabelen hvor som helst i CSS ved å skrive <span id="variabler">width: var(--element-bredde);</span>. Hvis du senere vil endre bredden, trenger du bare å oppdatere verdien i :root-seksjonen. <br>
+              <br> Det samme prinsippet gjelder for avstander. Du kan definere en variabel for avstand, for eksempel <span id="css">:root{--avstand-mellom-elementer: 20px;}</span>, og deretter bruke den som <span id="variabler">margin-bottom: var(--avstand-mellom-elementer);</span>. <br>
+              <br> Når det gjelder skriftstørrelse, kan du definere en variabel for det også, for eksempel <span id="css">:root{--skriftstorrelse: 16px;}</span>, og bruke den som <span id="variabler">font-size: var(--skriftstørrelse);</span>. <br>
+              <br> Det praktiske med dette er at du kan samle alle slike verdier øverst i dokumentet og enkelt endre dem senere. Hvis du for eksempel bestemmer deg for å øke avstanden mellom elementene, trenger du bare å oppdatere verdien for <span id="variabler">
+                <br>--avstand-mellom-elementer </span>.
+            </p>
           </div>
-        </div>
-        <div class="text-oppsett">
-          <h3>Andre variabler</h3>
-          <p>Å bruke variabler i CSS gir ikke bare fleksibilitet for farger, men også for andre verdier og tall. La oss si du vil definere variabler for bredde, avstand eller skriftstørrelse.
-            <br>
-            <br> For eksempel, for å håndtere bredden på elementer, kan du definere en variabel i :root-seksjonen, som <span id="css">:root{--element-bredde: 300px;}</span>. Nå kan du bruke denne variabelen hvor som helst i CSS ved å skrive <span id="variabler">width: var(--element-bredde);</span>. Hvis du senere vil endre bredden, trenger du bare å oppdatere verdien i :root-seksjonen.
-            <br>
-            <br> Det samme prinsippet gjelder for avstander. Du kan definere en variabel for avstand, for eksempel <span id="css">:root{--avstand-mellom-elementer: 20px;}</span>, og deretter bruke den som <span id="variabler">margin-bottom: var(--avstand-mellom-elementer);</span>.
-            <br>
-            <br> Når det gjelder skriftstørrelse, kan du definere en variabel for det også, for eksempel <span id="css">:root{--skriftstorrelse: 16px;}</span>, og bruke den som <span id="variabler">font-size: var(--skriftstørrelse);</span>.
-            <br>
-            <br> Det praktiske med dette er at du kan samle alle slike verdier øverst i dokumentet og enkelt endre dem senere. Hvis du for eksempel bestemmer deg for å øke avstanden mellom elementene, trenger du bare å oppdatere verdien for <span id="variabler"><br>--avstand-mellom-elementer</span>.
-          </p>
-        </div>
-        <div class="images-oppsett-4">
-          <div>
-           <h3>Bredde variable</h1>
-           <img src="/img/Bredde-variable.png" alt="">
-          </div>
-          <div>
-           <h3>Avstand variabel</h3>
-           <img src="/img/Avstand-variable.png" alt=""> 
-          </div>
-          <div>
-           <h3>Skrift variabel</h3>
-           <img src="/img/Skrift-variable.png" alt="">
+          <div class="images-oppsett-4">
+            <div>
+              <h3>Bredde variable </h1>
+                <img src="/img/Bredde-variable.png" alt="">
+            </div>
+            <div>
+              <h3>Avstand variabel</h3>
+              <img src="/img/Avstand-variable.png" alt="">
+            </div>
+            <div>
+              <h3>Skrift variabel</h3>
+              <img src="/img/Skrift-variable.png" alt="">
+            </div>
           </div>
         </div>
-       </div>
-    </div>
+      </div>
       <div id="VanligeFeilScroll" class="vanligeFeil">
         <h1>Vanlige Feil</h1>
         <div class="box-oppsett">
           <div class="text-oppsett">
             <h3>Margin og padding</h3>
-            <p> Når man starter med og lærere seg css er det noen vanlige feil som det er fint og unngå. Ett eksempel som jeg selv kan innrømme at jeg har slit med, er og glemme forskjellen på margin og padding.<br>
-            <br> Margin er avstanden mellom elementet og andre elementer. Hvis du skriver <span id="css">p {margin: 10px; }</span>, da vil det være 10 px mellom alle p elementene. Og siden vi bare skrev margin så vil det være 10px avstand alle veier. Men du kan også skriv <span id="css">p { margin-top, margin-buttom, margin-left eller margin-rigth}</span> og da vil det kunne være 10px avstand på den rettingen du velger.<br>
-            <br> Padding minner litt om margin siden det den gjøre at den øker størrelse på boksen til elementet. Så når du setter <span id="css">{padding: 10px;}</span> på et <span id="html">&lt;p&gt;</span>-element;, legger du til 10 piksler avstand mellom innholdet og kanten av elementet. Hvis du legger til en bakgrunnsfarge, vil denne bakgrunnen utvide seg med paddingen, siden padding er en del av elementets boksmodell.
+            <p> Når man starter med og lærere seg css er det noen vanlige feil som det er fint og unngå. Ett eksempel som jeg selv kan innrømme at jeg har slitt med, er og glemme forskjellen på margin og padding. <br>
+              <br> Margin er avstanden mellom elementet og andre elementer. Hvis du skriver <span id="css">p {margin: 10px; }</span>, da vil det være 10 px mellom alle p elementene. Og siden vi bare skrev margin så vil det være 10px avstand alle veier. Men du kan også skriv <span id="css">p { margin-top, margin-buttom, margin-left eller margin-rigth}</span> og da vil det kunne være 10px avstand på den rettingen du velger. <br>
+              <br> Padding minner litt om margin siden det den gjøre at den øker størrelse på boksen til elementet. Så når du setter <span id="css">{padding: 10px;}</span> på et <span id="html">&lt;p&gt;</span>-element;, legger du til 10 piksler avstand mellom innholdet og kanten av elementet. Hvis du legger til en bakgrunnsfarge, vil denne bakgrunnen utvide seg med paddingen, siden padding er en del av elementets boksmodell.
             </p>
           </div>
           <div class="images-oppsett-5">
             <div>
-             <h3>Padding</h3>
-             <img src="/img/Padding.png" alt="">
+              <h3>Padding</h3>
+              <img src="/img/Padding.png" alt="">
             </div>
             <div>
-             <h3>Margin</h3>
-             <img src="/img/Margin.png" alt="">
+              <h3>Margin</h3>
+              <img src="/img/Margin.png" alt="">
             </div>
             <div>
-             <h3>Oppsett</h3>
-             <img src="/img/Padding og Margin.png" alt="">
+              <h3>Oppsett</h3>
+              <img src="/img/Padding og Margin.png" alt="">
             </div>
-
           </div>
           <div class="text-oppsett">
-             <h3>Skalerbarhet</h3>
+            <h3>Skalerbarhet</h3>
+            <p> Når man skriver css så er det en ting man kan fort finne på og glemme. Og det er og gjøre koden din skalerbar. Det vil si at du kan bruke samme kode på forskjellige skjermstørrelser, ute at det ser rart ut. Det er veldig viktig og gjøre siden du vil jo ikke at nettsiden din skal se teit ut på noen enheter. <br>
+              <br> Det er 2 hovedmåter du kan gjøre det på. Den første er og bruke prosent. Hvis du skriver <span id="css">p {width: 50%;}</span> da vil den være 50% av skjermen, eller hvis du legger det inn i en div vil det være 50% av størrelsen til diven. Og det er veldig nyttig siden da vil den alltid være 50% av skjermen eller diven uansett hvilken skjermstørrelse du har eller om du gjør taben mindre. <br>
+              <br> Den andre måten er og bruke media queries. Media queries er en måte og endre css-en din basert på skjermstørrelsen. For og bruke media queries må du skrive <span id="css">@media (max-width: 600px) {p {width: 50%;}}</span>. Da vil den endre css-en din når skjermen er mindre enn 600px. Og det er veldig nyttig siden da kan du endre css-en din basert på skjermstørrelse ellre tab størrelse. <br>
+            </p>
           </div>
-          <div>
-            <h3></h3>
-            <img src="" alt="">
-            <h3></h3>
-            <img src="" alt="">
-            <h3></h3>
-            <img src="" alt="">
+          <div class="images-oppsett-6">
+            <div>
+              <h3>Media Max Width</h3>
+              <img src="/img/Media-Max.png" alt="">
+            </div>
+            <div>
+              <h3>Media Min Width</h3>
+              <img src="/img/Media-Min.png" alt="">
+            </div>
           </div>
         </div>
       </div>
       <div id="tipsOgTriksScroll" class="tipsOgTriks">
-        <h1>Tips Og Triks</h1>
+        <h1>Tips og Triks</h1>
+        <div class="box-oppsett">
+          <div class="text-oppsett">
+            <h3>Flexbox</h3>
+            <p>Når du først begynner og lage en nettside, så merker du kanskje at det er litt vanskelig og få elementene dine til og gå der du vil de skal være. Men frykt ikke for det er her flexbox kommer inn. <br>
+              <br>Flexbox er en metode for å organisere og justere plasseringen av elementene på nettsiden. La oss si at du har en <br>
+              <span id="html">&lt;div class="container"&gt;</span> med tre <br>
+              <span id="html">&lt;div class="item"&gt;</span> elementer inne i seg. Du kan enkelt organisere dem ved å bruke flexbox. <br>
+              <br> For å bruke flexbox, må du først definere en flex-container. For å gjøre det, skriv <span id="css">.flex-container {display: flex;}</span>. Nå er <span id="css">.flex-container</span> en flex-container, og alle elementene inne i den vil bli påvirket av flexbox. <br>
+              <br> Det er mangen flere ting du kan gjøre med flex-box, du kan gjøre <span id="css"> flex-direction: column;</span> for og få de til og stå under hverandre. Du kan skriv <span id="css">justify-content: space-evenly;</span> for og få det diven inn container diven til og bli i midten av diven.
+            </p>
+          </div>
+          <div class="images-oppsett-7">
+            <div>
+              <h3>Flexbox</h3>
+              <img src="/img/Flex-css.png" alt="">
+            </div>
+            <div>
+              <h3>Flex-direction: row</h3>
+              <div class="flex-box-show-row">
+                <div>Div 1</div>
+                <div>Div 2</div>
+                <div>Div 3</div>
+              </div>
+            </div>
+            <h3>Flex-direction: column</h3>
+            <div class="flex-box-show-column">
+              <div>Div 1</div>
+              <div>Div 2</div>
+              <div>Div 3</div>
+            </div>
+          </div>
+          <div class="text-oppsett">
+            <h3>Hover og Active</h3>
+            <p>Hvis du vil få nettsiden din til og se bedre ut, vet jeg om en kult ting du kan gjøre. Du kan bruke hover og active. Om du skal bruke det skriver du <span id="css">:hover</span> eller <span id="css">:active</span> etter attributen din. Et eksempel er <br>
+              <span id="css">p:hover {coler: red;}</span>
+              <br>
+              <br> Det <span id="css">:hover</span> gjør er at hva en verdien som er inni <span id="css">p:hover { }</span> kommer til og skje når du hover over p elementet. <span id="css">:hover</span> kan være fint og ha med nå du vil at noen skal trykke på noe. <br>
+              <br>Og det <span id="css">:active</span> gjør er at hva en verdien som er inni <span id="css">p:active{ }</span> kommer til og skje når du trykker på p elementet. <span id="css">:active</span> er fint og bruke nå en person skal trykke på noe sånn at men vet at man fatisk trykket der siden kanskje fargen endret seg. <br>
+              <br> Når det kommer til <span id="css">:hover</span> og <span id="css">:active</span> er det masse forskjellige ting du kan gjøre, bare fantasien som setter grenser. Du kan endre farge, bakgrunnsfarge, textstørrels få ting til og bevege seg når du trykker på, her kan du gjøre masse kult.
+            </p>
+          </div>
+          <div class="images-oppsett-8">
+            <div>
+              <h3>Hover css</h3>
+              <img src="/img/Hover.png" alt="">
+            </div>
+            <div>
+              <h3>Hover </h1>
+                <div class="div-hover">
+                  <div>
+                    <p>Hover over meg</p>
+                  </div>
+                </div>
+            </div>
+            <div>
+              <h3>Active </h1>
+                <div class="div-active">
+                  <div>
+                    <p>Trykk på meg</p>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
       </div>
+    </div>
   </body>
 </html>

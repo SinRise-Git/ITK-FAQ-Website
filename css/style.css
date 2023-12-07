@@ -107,29 +107,25 @@ h3 {
     text-align: center;
 }
 
-.box-oppsett .images-oppsett-1 img {
-    width: 20rem;
-}
 
-.box-oppsett .images-oppsett-2 img {
-    width: 14rem;
-}
 
-.box-oppsett .images-oppsett-3 img {
-    width: 18rem;
-}
-.box-oppsett .images-oppsett-4 img {
-    width: 22rem;
-}
-
-.box-oppsett .images-oppsett-1, .images-oppsett-2  p {
-    font-weight: 900;
-    text-align: center;
-}
-
-.box-oppsett .images-oppsett-1 img, .images-oppsett-2 img {
+.images-oppsett-1 img, .images-oppsett-2 img, .images-oppsett-3 img, .images-oppsett-4 img, .images-oppsett-5 img {
     border-radius: 5px;
+    width: 100%;
 }
+
+.images-oppsett-5 img {
+    width: 50% !important;
+}
+
+.images-oppsett-1, .images-oppsett-2, .images-oppsett-3, .images-oppsett-4, .images-oppsett-5{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
 
 .box-oppsett div img {
     display: block;
@@ -145,14 +141,8 @@ h3 {
     color: #346CA1;
 }
 
-#cssValg, #fargeValg {
+#variabler  {
     color: orange;
-}
-
-#fargeValg{
-    background-color: transparent;
-    border: none;
-    padding: 0px;
 }
 
 

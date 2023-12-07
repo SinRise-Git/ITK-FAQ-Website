@@ -51,31 +51,42 @@
             </p>
           </div>
           <div class="images-oppsett-1">
-            <h3>Innebygd CSS</h3>
-            <img src="/img/Innebygd.png" alt="">
-            <h3>Ekstern CSS</h3>
-            <img src="/img/Ekstern.png" alt="">
-            <h3>Inline CSS</h3>
-            <img src="/img/Inline.png" alt="">
+            <div>
+             <h3>Innebygd CSS</h3>
+             <img src="/img/Innebygd.png" alt="">
+            </div>
+            <div>
+             <h3>Ekstern CSS</h3>
+             <img src="/img/Ekstern.png" alt="">
+            </div>
+            <div>
+             <h3>Ekstern CSS</h3>
+             <img src="/img/Inline.png" alt="">
+            </div>
           </div>
           <div class="text-oppsett">
             <h3>Attributer</h3>
             <p> Når du skal style noe på en av disse måtene og skrive CSS, må du referere til attributten du vil style. Det er mange forskjellige ting du kan endre, men nå fokuserer vi bare på fargen. <br>
               <br> Hvis du vi style alle av en atribut i et html file, forexempel alle <span id="html">&lt;h1&gt;&lt;/h1&gt;</span> it html filen, da må du skrive <span id="css"> h1 {color: red;}</span> on siden du da velger og si alle h1 vil alle h1 bli den stilen du velger.<br>
-              <br> Hvis du vil style en h1 som har en id, for eksempel <span id="html">&lt;h1 id = “overtext”&gt&lt;/h1&gt;</span> da må du referere til id og da starter vi alltid med en #, så da blir det <span id="css">#overtext{color: red;}</span>
-              <br>
+              <br> Hvis du vil style en h1 som har en id, for eksempel <span id="html">&lt;h1 id = “overtext”&gt&lt;/h1&gt;</span> da må du referere til id og da starter vi alltid med en #, så da blir det <span id="css">#overtext{color: red;}</span><br>
               <br> Hvis du vil style en h1 inn en div som <br>
               <span id="html"> &lt;div class="overtext"&gt;&lt;h1&gt;&lt;/h1&gt;&lt;/div&gt;</span> da må du referere til div class og da starter vi med. så da blir det <span id="css">.overtext h1 {color: red;}</span> siden da referer vi til h1 inn diven <br>
               <br> Dette prinsippet fungerer for alle attributter.Hvis du har id-er eller div-klasser inne i hverandre, fortsetter du bare nedover til du kommer til den attributten du vil endre. Husk å bruke komma mellom hver attributt du går gjennom.
             </p>
           </div>
           <div class="images-oppsett-2">
-            <h3>Attribut alt </h3>
-            <img src="/img/Attribut-1.png" alt="">
-            <h3>Attribut i id</h3>
-            <img src="/img/Attribut-2.png" alt="">
-            <h3>Attribut i div</h3>
-            <img src="/img/Attribut-3.png" alt="">
+            <div>
+             <h3>Attribut alt </h3>
+             <img src="/img/Attribut-1.png" alt=""> 
+            </div>
+            <div>
+              <h3>Attribut i id</h3>
+              <img src="/img/Attribut-2.png" alt="">
+            </div>
+            <div>
+              <h3>Attribut i div</h3>
+              <img src="/img/Attribut-3.png" alt="">
+            </div>
           </div>
         </div>
       </div>
@@ -84,44 +95,54 @@
         <div class="box-oppsett">
         <div class="text-oppsett"> 
          <h3>Farge variabler</h3>
-         <p>La oss si at du skal endre fargen på en <span id="html">&lt;p&gt;&lt;/p&gt;</span>. En vanlig tilnærming ville være å skrive <span id="css">p {color: red;}</span>. Imidlertid, for å gjøre stilen din mer fleksibel og gjenbrukbar, kan du dra nytte av CSS-variabler.
-          <br>
-          <br> For å bruke variabler, starter du med å definere dem i :root-seksjonen ved å skrive <span id="css">:root{--text-farge: red;}</span>. Her er <span id="css">--text-farge</span> navnet på variabelen, og red er verdien du vil sette den til. Du kan også bruke andre fargenavn eller til og med fargekoder som <span id="css">#FFFFFF</span>.
-          <br>
-          <br> Nå, etter at variabelen er definert, kan du bruke den i stedet for å skrive ut fargen direkte. I stedet for <span id="css">color: red;</span>, skriv <span id="cssValg">color: var(--text-farge);</span>. Den virkelige fordelen kommer når du vil endre fargen. I stedet for å gå gjennom hele CSS-filen for å oppdatere hver forekomst av <span id="css">color: red;</span>, kan du enkelt endre verdien av <span id="css">--text-farge</span> i :root-seksjonen, og alle steder som bruker denne variabelen vil automatisk oppdatere seg.
+         <p>La oss si at du skal endre fargen på en <span id="html">&lt;p&gt;&lt;/p&gt;</span>. En vanlig tilnærming ville være å skrive <span id="css">p {color: red;}</span>. Imidlertid, for å gjøre stilen din mer fleksibel og gjenbrukbar, kan du dra nytte av CSS-variabler.<br>
+          <br> For å bruke variabler, starter du med å definere dem i :root-seksjonen ved å skrive <span id="css">:root{--text-farge: red;}</span>. Her er <span id="css">--text-farge</span> navnet på variabelen, og red er verdien du vil sette den til. Du kan også bruke andre fargenavn eller til og med fargekoder som <span id="css">#FFFFFF</span>.<br>
+          <br> Nå, etter at variabelen er definert, kan du bruke den i stedet for å skrive ut fargen direkte. I stedet for <span id="css">color: red;</span>, skriv <span id="variabler">color: var(--text-farge);</span>. Den virkelige fordelen kommer når du vil endre fargen. I stedet for å gå gjennom hele CSS-filen for å oppdatere hver forekomst av <span id="variabler">color: red;</span>, kan du enkelt endre verdien av <span id="css">--text-farge</span> i :root-seksjonen, og alle steder som bruker denne variabelen vil automatisk oppdatere seg.
           <br>
           <br> Å bruke variabler i CSS gir en strukturert tilnærming til styling, gjør koden mer lesbar og gjør det enkelt å vedlikeholde og oppdatere utseendet på nettstedet ditt. Dette er spesielt nyttig når du har mange elementer med samme farge eller egenskap, og du vil gjøre globale endringer enkelt.
           <br>
           </p>     
         </div>
         <div class="images-oppsett-3">
-          <h3>Rød variable</h3> 
-          <img src="/img/Rød-variable.png" alt="">
-          <h3>Grønn variable</h3> 
-          <img src="/img/Grønn-variable.png" alt="">
-          <h3>Blå variable</h3> 
-          <img src="/img/Blå-variable.png" alt="">
+          <div>
+           <h3>Rød variable</h3> 
+           <img src="/img/Rød-variable.png" alt="">
+          </div>
+          <div>
+           <h3>Grønn variable</h3> 
+           <img src="/img/Grønn-variable.png" alt="">
+          </div>
+          <div>
+           <h3>Blå variable</h3> 
+           <img src="/img/Blå-variable.png" alt="">
+          </div>
         </div>
         <div class="text-oppsett">
           <h3>Andre variabler</h3>
           <p>Å bruke variabler i CSS gir ikke bare fleksibilitet for farger, men også for andre verdier og tall. La oss si du vil definere variabler for bredde, avstand eller skriftstørrelse.
             <br>
-            <br> For eksempel, for å håndtere bredden på elementer, kan du definere en variabel i :root-seksjonen, som <span id="css">:root{--element-bredde: 300px;}</span>. Nå kan du bruke denne variabelen hvor som helst i CSS ved å skrive <span id="cssValg">width: var(--element-bredde);</span>. Hvis du senere vil endre bredden, trenger du bare å oppdatere verdien i :root-seksjonen.
+            <br> For eksempel, for å håndtere bredden på elementer, kan du definere en variabel i :root-seksjonen, som <span id="css">:root{--element-bredde: 300px;}</span>. Nå kan du bruke denne variabelen hvor som helst i CSS ved å skrive <span id="variabler">width: var(--element-bredde);</span>. Hvis du senere vil endre bredden, trenger du bare å oppdatere verdien i :root-seksjonen.
             <br>
-            <br> Det samme prinsippet gjelder for avstander. Du kan definere en variabel for avstand, for eksempel <span id="css">:root{--avstand-mellom-elementer: 20px;}</span>, og deretter bruke den som <span id="cssValg">margin-bottom: var(--avstand-mellom-elementer);</span>.
+            <br> Det samme prinsippet gjelder for avstander. Du kan definere en variabel for avstand, for eksempel <span id="css">:root{--avstand-mellom-elementer: 20px;}</span>, og deretter bruke den som <span id="variabler">margin-bottom: var(--avstand-mellom-elementer);</span>.
             <br>
-            <br> Når det gjelder skriftstørrelse, kan du definere en variabel for det også, for eksempel <span id="css">:root{--skriftstorrelse: 16px;}</span>, og bruke den som <span id="cssValg">font-size: var(--skriftstørrelse);</span>.
+            <br> Når det gjelder skriftstørrelse, kan du definere en variabel for det også, for eksempel <span id="css">:root{--skriftstorrelse: 16px;}</span>, og bruke den som <span id="variabler">font-size: var(--skriftstørrelse);</span>.
             <br>
-            <br> Det praktiske med dette er at du kan samle alle slike verdier øverst i dokumentet og enkelt endre dem senere. Hvis du for eksempel bestemmer deg for å øke avstanden mellom elementene, trenger du bare å oppdatere verdien for <span id="css"><br>--avstand-mellom-elementer</span>.
+            <br> Det praktiske med dette er at du kan samle alle slike verdier øverst i dokumentet og enkelt endre dem senere. Hvis du for eksempel bestemmer deg for å øke avstanden mellom elementene, trenger du bare å oppdatere verdien for <span id="variabler"><br>--avstand-mellom-elementer</span>.
           </p>
         </div>
         <div class="images-oppsett-4">
-          <h3>Bredde variable</h1>
-          <img src="/img/Bredde-variable.png" alt="">
-          <h3>Avstand variabel</h3>
-          <img src="/img/Avstand-variable.png" alt="">
-          <h3>Skrift variabel</h3>
-          <img src="/img/Skrift-variable.png" alt="">
+          <div>
+           <h3>Bredde variable</h1>
+           <img src="/img/Bredde-variable.png" alt="">
+          </div>
+          <div>
+           <h3>Avstand variabel</h3>
+           <img src="/img/Avstand-variable.png" alt=""> 
+          </div>
+          <div>
+           <h3>Skrift variabel</h3>
+           <img src="/img/Skrift-variable.png" alt="">
+          </div>
         </div>
        </div>
     </div>
@@ -130,14 +151,25 @@
         <div class="box-oppsett">
           <div class="text-oppsett">
             <h3>Margin og padding</h3>
+            <p> Når man starter med og lærere seg css er det noen vanlige feil som det er fint og unngå. Ett eksempel som jeg selv kan innrømme at jeg har slit med, er og glemme forskjellen på margin og padding.<br>
+            <br> Margin er avstanden mellom elementet og andre elementer. Hvis du skriver <span id="css">p {margin: 10px; }</span>, da vil det være 10 px mellom alle p elementene. Og siden vi bare skrev margin så vil det være 10px avstand alle veier. Men du kan også skriv <span id="css">p { margin-top, margin-buttom, margin-left eller margin-rigth}</span> og da vil det kunne være 10px avstand på den rettingen du velger.<br>
+            <br> Padding minner litt om margin siden det den gjøre at den øker størrelse på boksen til elementet. Så når du setter <span id="css">{padding: 10px;}</span> på et <span id="html">&lt;p&gt;</span>-element;, legger du til 10 piksler avstand mellom innholdet og kanten av elementet. Hvis du legger til en bakgrunnsfarge, vil denne bakgrunnen utvide seg med paddingen, siden padding er en del av elementets boksmodell.
+            </p>
           </div>
-          <div class="">
-            <h3></h3>
-            <img src="" alt="">
-            <h3></h3>
-            <img src="" alt="">
-            <h3></h3>
-            <img src="" alt="">
+          <div class="images-oppsett-5">
+            <div>
+             <h3>Padding</h3>
+             <img src="/img/Padding.png" alt="">
+            </div>
+            <div>
+             <h3>Margin</h3>
+             <img src="/img/Margin.png" alt="">
+            </div>
+            <div>
+             <h3>Oppsett</h3>
+             <img src="/img/Padding og Margin.png" alt="">
+            </div>
+
           </div>
           <div class="text-oppsett">
              <h3>Skalerbarhet</h3>
